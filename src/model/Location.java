@@ -2,6 +2,7 @@ package model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
 import java.math.BigDecimal;
 
 
@@ -10,6 +11,7 @@ import java.math.BigDecimal;
  * 
  */
 @Entity
+@Table(name="Location")
 public class Location implements Serializable {
 	private static final long serialVersionUID = 1L;
 

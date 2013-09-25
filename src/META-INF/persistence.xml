@@ -8,13 +8,26 @@
 		<class>model.Location</class>
 		<class>model.PublicMemento</class>
 		<class>model.Tag</class>
-
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/reminiscensdb?characterEncoding=UTF-8" />
+				value="jdbc:mysql://localhost:3306/reminiscensdb?characterEncoding=UTF-8"/>
 			<property name="javax.persistence.jdbc.user" value="reminiscens" />
 			<property name="javax.persistence.jdbc.password" value="reminiscens@2013" />
 		</properties>
 	</persistence-unit>
+	<persistence-unit name="ReminiscensKB-Test.Lifeparticipation">
+        <class>model.City</class>
+        <class>model.FuzzyDate</class>
+        <class>model.Location</class>
+        <class>model.PublicMemento</class>
+        <class>model.Tag</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url"
+                value="jdbc:mysql://test.lifeparticipation.org:3306/reminiscensdb?characterEncoding=UTF-8"/>
+            <property name="javax.persistence.jdbc.user" value="cdparra" />
+            <property name="javax.persistence.jdbc.password" value="cdparra@lp2012" />
+        </properties>
+    </persistence-unit>
 </persistence>

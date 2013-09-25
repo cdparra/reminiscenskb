@@ -2,7 +2,6 @@ package model;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.math.BigInteger;
 import java.util.Date;
 
 
@@ -20,12 +19,10 @@ public class PublicMemento implements Serializable {
 	@Column(name="public_memento_id")
 	private String publicMementoId;
 
-	@Lob
 	private String author;
 
 	private String category;
 
-	@Lob
 	private String collection;
 
 	@Column(name="collection_type")
@@ -40,6 +37,7 @@ public class PublicMemento implements Serializable {
 	@Column(name="creation_date")
 	private Date creationDate;
 
+	@Column
 	private String headline;
 
 	@Column(name="is_collection")
@@ -49,31 +47,29 @@ public class PublicMemento implements Serializable {
 	@Column(name="last_update")
 	private Date lastUpdate;
 
+	@Column
 	private String locale;
 
-	@Lob
 	private String nationality;
 
-	@Lob
 	@Column(name="resource_thumbnail_url")
 	private String resourceThumbnailUrl;
 
 	@Column(name="resource_type")
 	private String resourceType;
 
-	@Lob
 	@Column(name="resource_url")
 	private String resourceUrl;
 
 	private String source;
 
-	@Lob
 	@Column(name="source_url")
 	private String sourceUrl;
 
-	@Lob
+	@Column(name="text")
 	private String text;
 
+	@Column
 	private String type;
 
 	//uni-directional many-to-one association to FuzzyDate

@@ -10,6 +10,7 @@ import java.math.BigDecimal;
  * 
  */
 @Entity
+@Table(name="City")
 public class City implements Serializable {
 	private static final long serialVersionUID = 1L;
 
